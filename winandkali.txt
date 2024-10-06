@@ -1,0 +1,66 @@
+@POWERSHELL
+enable-WindowsOptionalFeature -online -FeatureName Microsoft-Windows-Subsystem-Linux 
+
+#RESTART
+
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+
+@BROWSER
+https://aka.ms/wsl2kernel
+
+DOWNLOAD and INSTALL : WSL2 Linux kernel update package for x64 machines
+
+
+@POWERSHELL
+wsl --set-default-version 2
+
+INSTALL DOCKER:
+
+https://docs.docker.com/desktop/install/windows-install/
+
+RUN THE DOCKER APPLICATION 
+
+
+KALI DOCKER
+https://hub.docker.com/r/kalilinux/kali-rolling
+
+
+*****************************
+Install-Module -Name DockerMsftProvider -Force
+Install-Package -Name docker -ProviderName DockerMsftProvider
+
+Start-Service docker
+Set-Service -Name docker -StartupType Automatic
+docker --version
+docker run hello-world
+
+
+
+apt install iputils-ping
+
+
+*********************************************************
+INSTALL DOCKER:
+
+https://docs.docker.com/desktop/install/windows-install/
+
+RUN THE DOCKER APPLICATION 
+
+
+KALI DOCKER
+https://hub.docker.com/r/kalilinux/kali-rolling
+
+OPEN CMD
+
+POWERSHELL
+
+docker -version
+docker pull kalilinux/kali-rolling
+docker image ls
+
+#GET THE IMAGE ID OF KALI
+docker run -it IMAGE ID
+
+
