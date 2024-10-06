@@ -57,7 +57,7 @@ OPEN CMD
 
 POWERSHELL
 
-docker -version
+docker -v
 docker pull kalilinux/kali-rolling
 docker image ls
 
