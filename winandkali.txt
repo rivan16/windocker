@@ -47,6 +47,7 @@ INSTALL DOCKER:
 https://docs.docker.com/desktop/install/windows-install/
 
 RUN THE DOCKER APPLICATION 
+CLICK TERMINAL ON LOWER RIGHT
 
 
 KALI DOCKER
